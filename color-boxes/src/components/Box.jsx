@@ -16,7 +16,7 @@ const Box = ({ id, width, height, color, removeBox }) => {
             >
 
             </div>
-            <button onClick={() => removeBox(id)}>X</button>
+            <button data-testid={`remove-button-${id}`} onClick={() => removeBox(id)}>X</button>
         </>
     )
 
