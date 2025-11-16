@@ -43,6 +43,7 @@ const NewTodoForm = ({ addTodo }) => {
                 onChange={handleChange}
                 variant="outlined"
                 color="success"
+                placeholder="Enter Todo"
                 required
                 sx={{
                     "& .MuiOutlinedInput-root": {
@@ -67,7 +68,7 @@ const NewTodoForm = ({ addTodo }) => {
                     },
                 }}
             />
-            <Button type="submit" variant="contained" color="primary">Submit</Button>
+            <Button id="form-submit-btn" type="submit" variant="contained" color="primary">Submit</Button>
         </Box>
     )
 
